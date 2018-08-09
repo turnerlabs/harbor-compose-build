@@ -21,3 +21,8 @@ RUN go get github.com/mitchellh/gox
 RUN go get github.com/tcnksm/ghr
 RUN go get github.com/inconshreveable/mousetrap
 RUN go get github.com/jstemmer/go-junit-report
+
+RUN mkdir -p /project
+WORKDIR /project
+
+CMD ["/bin/bash"]
